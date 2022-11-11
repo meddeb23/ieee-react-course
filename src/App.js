@@ -1,7 +1,7 @@
 import "./index.css";
-import ProductQuantity from "./components/ProductQuantity";
 import { useState } from "react";
-import { BsFillTrashFill } from "react-icons/bs";
+import Navbar from "./components/Navbar";
+import CartList from "./components/CartList";
 
 function App() {
   const [products, setproducts] = useState([
@@ -41,31 +41,20 @@ function App() {
     );
   };
 
+  const deleteCartItem = (_id) => {
+    setproducts(products.filter((i) => i._id !== _id));
+  };
+
   return (
     <div>
-      {products.map((product) => (
-        <div key={"prod" + product._id} className="list-item">
-          <div>{product.name}</div>
-          <ProductQuantity
-            changeQuantity={handleOnChangeQuantity}
-            product={product}
-          />
-          <div>
-            {product.unitPrice} {product.currency}
-          </div>
-          <div>
-            {product.unitPrice * product.quantity} {product.currency}
-          </div>
-          <button
-            onClick={() => {
-              setproducts(products.filter((i) => i._id !== product._id));
-            }}
-            className="p-2 bg-red-400 text-white rounded-md"
-          >
-            <BsFillTrashFill />
-          </button>
-        </div>
-      ))}
+      <Navbar />
+      <main className="max-w-5xl">
+        <CartList
+          products={products}
+          handleOnChangeQuantity={handleOnChangeQuantity}
+          deleteItem={deleteCartItem}
+        />
+      </main>
     </div>
   );
 }
