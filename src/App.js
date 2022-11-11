@@ -48,7 +48,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <main className="max-w-5xl">
+      <main className="max-w-5xl mx-auto">
         <CartList
           products={products}
           handleOnChangeQuantity={handleOnChangeQuantity}

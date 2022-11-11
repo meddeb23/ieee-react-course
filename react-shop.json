@@ -1,0 +1,62 @@
+{
+  "cart": [
+    {
+      "id": 1,
+      "name": "Winsome Alex 2-pc Set TV Table, Natural",
+      "unitPrice": 180,
+      "image": "/images/tv_table.jpg",
+      "currency": "DT",
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "Winsome Wood Halifax Storage/Organization, White",
+      "unitPrice": 180,
+      "image": "/images/wood_halifax.jpg",
+      "currency": "DT",
+      "quantity": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Winsome Alex 2-pc Set TV Table, Natural",
+      "unitPrice": 180,
+      "image": "/images/tv_table.jpg",
+      "currency": "DT",
+      "stock": 1
+    },
+    {
+      "id": 2,
+      "name": "Winsome Wood Halifax Storage/Organization, White",
+      "unitPrice": 180,
+      "image": "/images/wood_halifax.jpg",
+      "currency": "DT",
+      "stock": 3
+    },
+    {
+      "id": 3,
+      "name": "La Crosse Technology W88723 Color Alarm Clock",
+      "unitPrice": 180,
+      "image": "/images/La Crosse Technology W88723 Color Alarm Clock.jpg",
+      "currency": "DT",
+      "stock": 5
+    },
+    {
+      "id": 4,
+      "name": "Ergonomic Office Chair",
+      "unitPrice": 180,
+      "image": "/images/Ergonomic Office Chair.jpg",
+      "currency": "DT",
+      "stock": 2
+    },
+    {
+      "id": 5,
+      "name": "The Child Figural Bean Bag ",
+      "unitPrice": 180,
+      "image": "/images/The Child Figural Bean Bag .jpg",
+      "currency": "DT",
+      "stock": 10
+    }
+  ]
+}

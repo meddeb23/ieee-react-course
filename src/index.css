@@ -9,3 +9,6 @@
 .list-item {
   @apply grid grid-cols-5 justify-items-center items-center px-2 py-2 border-b-[1px] border-black;
 }
+nav {
+  @apply flex text-white justify-between max-w-5xl mx-auto;
+}
